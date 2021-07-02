@@ -22,6 +22,7 @@ public class ImageModel
         return textProperty().get();
     }
 
+
     public final void setText(String text) {
         textProperty().set(text);
     }
