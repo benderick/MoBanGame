@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0" stylesheets="@../bootstrapfx.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StartController">
+   <children>
+      <ImageView fitHeight="375.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/start.gif" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="375.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="outButton" layoutX="124.0" layoutY="224.0" mnemonicParsing="false" onAction="#outButtonClick" prefHeight="36.0" prefWidth="83.0" text="脱机模式" textFill="#c13617">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-danger" />
+               </styleClass>
+            </Button>
+            <Button fx:id="inButton" layoutX="255.0" layoutY="224.0" mnemonicParsing="false" onAction="#inButtonClick" prefHeight="36.0" prefWidth="90.0" text="联机模式" textFill="#df0fd1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-primary" />
+               </styleClass>
+            </Button>
+            <Label layoutX="292.0" layoutY="104.0" text="魔板游戏" textFill="#8e76c7">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="134.0" layoutY="91.0" prefHeight="58.0" prefWidth="148.0" text="Welcome" textAlignment="JUSTIFY" textFill="#e11746">
+               <font>
+                  <Font name="Corbel" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" layoutX="393.0" layoutY="224.0" mnemonicParsing="false" onAction="#exitButtonClick" prefHeight="36.0" prefWidth="90.0" text="退出游戏">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-success" />
+               </styleClass>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
